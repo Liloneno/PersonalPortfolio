@@ -1,0 +1,378 @@
+/* The end of CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: #333;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #099b85;
+  padding: 4px 20px;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.icon {
+  display: none;
+}
+.logo img {
+  width: 50px;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 3px;
+  padding: 6px;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+nav a:last-child {
+  margin-right: none;
+}
+nav a:hover {
+  color: #fff;
+  /* padding-bottom: 10px; */
+  outline: 1px solid #fff;
+}
+/* The end of header */
+.banner {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  /* background-color: salmon; */
+}
+.banner-img {
+  background-image: url(img/3.png);
+  width: 450px;
+  background-position: 0 -70px;
+  height: 75vh;
+}
+.banner-text {
+  width: 700px;
+  padding: 40px 8px;
+  /* background-color: blue; */
+}
+.banner-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.banner-text h2 span {
+  color: #099b85;
+}
+.banner-text p {
+  font-size: 20px;
+}
+.banner-text h2,
+.banner-text p,
+.about h2,
+.projects,
+.contact h2,
+footer {
+  text-align: center;
+}
+/* The end of banner */
+.about,
+.projects,
+.contact {
+  padding: 70px 0;
+  /* background-color: #099b85; */
+}
+.about {
+  background-color: #f5f0f08e;
+}
+.about-title,
+.projects h2,
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.about-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  /* background-color: blue; */
+}
+.about-box-1,
+.about-box-2,
+.about-box-3,
+.about-box-4,
+.about-box-5 {
+  background-color: #fff;
+  width: 380px;
+  margin: 0 20px 30px;
+  text-align: center;
+  border-radius: 5px;
+  /* box-shadow: 0 3px 8px grey; */
+  /* border-bottom: 1px solid #099b85; */
+}
+.about-box-1 h3,
+.about-box-2 h3,
+.about-box-3 h3,
+.about-box-4 h3,
+.about-box-5 h3 {
+  padding: 10px;
+}
+.about-box-3 a,
+.about-box-5 a {
+  color: #099b85;
+  text-decoration: none;
+}
+.about-box-1 p,
+.about-box-2 p,
+.about-box-3 p,
+.about-box-4 p,
+.about-box-5 p,
+footer {
+  line-height: 1.7;
+  padding: 0 17px 20px;
+}
+.fasa {
+  margin-top: 30px;
+  font-size: 20px;
+}
+/* The n of about */
+
+.projects p {
+  background-color: #099b85;
+  padding: 15px;
+  border-radius: 50px;
+  display: inline-block;
+  width: 90%;
+}
+/* The end of projects */
+.contact {
+  background-color: #f5f0f08e;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 30px;
+}
+.form-info h3,
+.form-info i {
+  color: #646464;
+}
+
+.form-info,
+form {
+  background-color: #fff;
+  padding: 20px;
+  width: 500px;
+  margin: 5px;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 13px;
+}
+.form-group i {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  color: #bbb6b6a1;
+}
+.form-group .fa-comment {
+  top: 10%;
+}
+.form-info-detail {
+  margin-bottom: 20px;
+}
+.form-info-detail h3 {
+  margin-bottom: 5px;
+}
+label {
+  /* display: block; */
+  margin-bottom: 10px;
+  /* width: 120px; */
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px 8px 8px 33px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  outline: 1px solid #bbb6b6a1;
+}
+input:focus:invalid,
+textarea:focus:invalid {
+  outline: 1px solid red;
+}
+input:title,
+textarea:title {
+  color: #099b85ab;
+}
+.manda {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: #fff;
+  font-size: 16px;
+}
+button[type="reset"] {
+  color: red;
+  border: 1px solid red;
+}
+button[type="submit"] {
+  color: #099b85;
+  border: 1px solid #099b85;
+}
+button[type="submit"],
+button[type="reset"] {
+  padding: 7px 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+button[type="reset"]:hover,
+button[type="submit"]:hover {
+  cursor: pointer;
+  color: #fff;
+}
+button[type="reset"]:hover {
+  background-color: red;
+}
+button[type="submit"]:hover {
+  background-color: #099b85;
+}
+/* The end of form */
+
+footer {
+  background-color: #099b85;
+  padding: 8px 0;
+}
+
+/* Responsif */
+@media (max-width: 1050px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-img {
+    /* margin-top: 10px; */
+    width: 300px;
+    height: 45vh;
+    /* border-radius: 50%; */
+    /* border: 1px solid #bebbbb; */
+    /* box-shadow: 0 3px 10px lightgrey; */
+    background-position: -120px -80px;
+    margin-bottom: -30px;
+  }
+  .form-info {
+    width: 300px;
+  }
+  form {
+    width: 60%;
+  }
+}
+@media (max-width: 860px) {
+  .about-box-1,
+  .about-box-2,
+  .about-box-3,
+  .about-box-4,
+  .about-box-5 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav a {
+    display: none;
+  }
+  .icon {
+    display: block;
+    cursor: pointer;
+    font-size: large;
+  }
+  .banner-text {
+    width: 500px;
+  }
+  .form-info,
+  form {
+    width: 80%;
+  }
+  nav.show {
+    display: block;
+    position: absolute;
+    background-color: #099b85;
+    width: 100%;
+    top: 60px; /* Sesuaikan dengan tinggi header */
+    left: 0;
+    text-align: justify;
+  }
+
+  nav.show a {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .icon.active i::before {
+    content: "\f00d";
+  }
+}
+@media (max-width: 776px) {
+  .about-box-1,
+  .about-box-2,
+  .about-box-3,
+  .about-box-4,
+  .about-box-5 {
+    width: 270px;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-text h2 {
+    font-size: 28px;
+  }
+  .banner-text p {
+    font-size: 17px;
+  }
+  .about-title,
+  .projects h2,
+  .contact h2 {
+    font-size: 25px;
+  }
+  .form-info-detail h3 {
+    font-size: 17px;
+  }
+  .about-box-1 p,
+  .about-box-2 p,
+  .about-box-3 p,
+  .about-box-4 p,
+  .about-box-5 p,
+  .projects p,
+  input,
+  textarea,
+  button,
+  .form-info-detail p,
+  footer {
+    font-size: 15px;
+  }
+}
+@media (max-width: 635px) {
+  .about-box-1,
+  .about-box-2,
+  .about-box-3,
+  .about-box-4,
+  .about-box-5 {
+    width: 100%;
+  }
+}
+@media (max-width: 556px) {
+  .form-info,
+  form {
+    width: 100%;
+  }
+}

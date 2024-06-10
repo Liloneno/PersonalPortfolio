@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Orlando Rosario" />
+    <meta name="description" content="My Personal Portfolio" />
+    <meta name="keywords" content="Portfolio" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/waiter.png" />
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
+    <link rel="stylesheet" href="plugins/Font Awesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="logo">
+          <!-- <img src="img/waiter.png" alt="" /> -->
+          <h2>Orlando Rosario</h2>
+        </div>
+        <nav id="nav-menu">
+          <a href="#header"><i class="fas fa-home"></i> Home</a>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+          <a href="#projects"><i class="fas fa-project-diagram"></i> Project</a>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <a href="javascript:void(0);" class="icon" id="menu-icon">
+          <i class="fas fa-bars"></i>
+        </a>
+      </header>
+      <main>
+        <!-- BANNER -->
+        <div class="banner" id="header">
+          <div class="banner-img">
+            <!-- <img src="img/3.png" alt="" /> -->
+          </div>
+          <div class="banner-text">
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+            >
+              Hi, I am <span>Orlando Rosario</span>
+            </h2>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+            >
+              Web Designer & Content Creator
+            </p>
+          </div>
+        </div>
+        <!-- ABOUT -->
+        <div class="about" id="about">
+          <h2 class="about-title">About Me</h2>
+          <div class="about-box">
+            <div class="about-box-1" data-aos="fade-up" data-aos-duration="500">
+              <i class="fas fa-chalkboard-teacher fasa"></i>
+              <h3>Lecturing Assistant</h3>
+              <p>
+                Web Programming 1 Lecturing Assistant at Institute of Business
+                (IOB)
+              </p>
+            </div>
+            <!-- <div
+              class="about-box-2"
+              data-aos="slide-up"
+              data-aos-duration="800"
+            >
+              <h3>Web Designer</h3>
+              <p>Web Designer Using HTML, CSS and Bootstrap</p>
+            </div> -->
+            <div class="about-box-3" data-aos="fade-up" data-aos-duration="900">
+              <i class="fas fa-video fasa"></i>
+              <h3>Content Creator</h3>
+              <p>
+                Computer Tutorials and Fun Videos on
+                <a href="http://www.youtube.com/@liloneno" target="_blank"
+                  >Youtube</a
+                >
+                and <a href="">Tiktok</a>
+              </p>
+            </div>
+            <div
+              class="about-box-4"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <i class="fas fa-paint-brush fasa"></i>
+              <h3>Graphic Designer</h3>
+              <p>Design Using CorelDraw, Canva, and AI Tools</p>
+            </div>
+            <div
+              class="about-box-5"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              data-aos-delay="5000"
+            >
+              <i class="fas fa-chalkboard fasa"></i>
+              <h3>English Teacher</h3>
+              <p>
+                Teaching English for Beginners at
+                <a
+                  href="https://www.facebook.com/fundasaun.hadomitimor"
+                  target="_blank"
+                  >Fundasaun Hadomi Timor</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECTS -->
+        <div class="projects" id="projects">
+          <h2 data-aos="fade-up" data-aos-duration="800">My Projects</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <i class="fas fa-clock"></i> Coming Soon
+          </p>
+        </div>
+        <!-- CONTACT -->
+        <div class="contact" id="contact">
+          <h2 data-aos="fade-up" data-aos-duration="800">Contact Me</h2>
+          <div class="form">
+            <div
+              class="form-info"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              <div class="form-info-detail">
+                <h3><i class="fas fa-location-dot"></i> Address</h3>
+                <p>Kampung Baru</p>
+              </div>
+              <div class="form-info-detail">
+                <h3><i class="fas fa-phone"></i> Phone Number</h3>
+                <p>(+670) 75897401</p>
+              </div>
+              <div class="form-info-detail">
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p>orlandoneno07@gmail.com</p>
+              </div>
+            </div>
+            <form
+              action="https://formspree.io/f/xknddgpn"
+              method="POST"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="500"
+            >
+              <div class="form-group">
+                <!-- <label for="nrn">Complete Name</label> -->
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  id="nrn"
+                  name="name"
+                  required
+                  placeholder="Complete name"
+                  title="Please input your name!"
+                  oninvalid="this.setCustomValidity('Please input your name!')"
+                  oninput="this.setCustomValidity('')"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="email">Email</label> -->
+                <i class="fas fa-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  title="Please input your email!"
+                  required
+                  placeholder="Input your email"
+                  oninvalid="this.setCustomValidity('Please input your email!')"
+                  oninput="this.setCustomValidity('')"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="msg">Your Message</label> -->
+                <i class="fas fa-comment"></i>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  rows="4"
+                  title="Please write your message!"
+                  required
+                  placeholder="Your message..."
+                  oninvalid="this.setCustomValidity('Please write your message!')"
+                  oninput="this.setCustomValidity('')"
+                ></textarea>
+              </div>
+              <div class="form-group manda">
+                <button type="reset">Kansela</button>
+                <button type="submit">Submete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+          <p>copyright &copy; - All Right Reserved - 2024</p>
+        </footer>
+      </main>
+    </div>
+    <!-- JavaScript -->
+    <script src="plugins/aos/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: true,
+      });
+
+      document.getElementById("menu-icon").onclick = function () {
+        var nav = document.getElementById("nav-menu");
+        nav.classList.toggle("show");
+        this.classList.toggle("active");
+      };
+
+      // Menyembunyikan menu saat item diklik
+      document.querySelectorAll("#nav-menu a").forEach(function (link) {
+        link.onclick = function () {
+          var nav = document.getElementById("nav-menu");
+          nav.classList.remove("show");
+          document.getElementById("menu-icon").classList.remove("active");
+        };
+      });
+    </script>
+  </body>
+</html>
